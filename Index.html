@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<linkclass="" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  
+  
+  
+  <title>Edifice International Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <style>
+        body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans serif;
+  transition: all .5s;
+}
+
+header{
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+  position: ;
+  background-color: white;
+}
+
+header .logo-hold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: ;
+}
+
+
+.logo-hold h1{
+  margin-left: 15px;
+}
+header .img-hold{
+  width: 70px;
+}
+
+.body-img{
+  background-image: url(logo.jpg);
+  background-size: cover;
+  width: 100%;
+  
+}
+
+.img-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.60);
+}
+
+.img-text{
+  width: 500px;
+  display: block;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.img-content h1{
+   color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.body-group{
+  width: 700px;
+  display: block;
+  margin: auto;
+  border: 2px solid gainsboro;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.group{
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 720px){
+  header .logo-hold h1{
+    font-size: 16px;
+  }
+  .body-group{
+    width: 330px;
+  }
+  .body-post .post-hold{
+    font-size: 8px;
+  }
+ .body-group .flyer-hold{
+    width: 300px;
+  }
+  .input-hold{
+    flex-wrap: wrap;
+  }
+ .btn-group p,.img-upload{
+    text-align: center;
+    display: block;
+    margin: auto;
+   margin-top: 20px;
+  }
+  .body-title{
+  display: flex;
+  align-items: center;
+}
+
+.body-title .title-logo{
+  height: 60px;
+  width: 60px;
+  background-image: url(logo.jpg);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.title-text{
+  margin: 0px 10px;
+}
+.title-text p{
+  margin-top: -13px;
+}
+  
+  .body-post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-left: none;
+  border-right: none;
+}
+
+.body-post .post-hold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26px;
+}
+
+.post-hold h3{
+  margin: 0px 6px;
+}
+
+.share-hold{
+  padding: 10px;
+}
+
+
+.share-btn .btn1,.btn2,.btn3,.btn4{
+  background-color: transparent;
+  padding: 17px 14px;
+  margin: 0px 6px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all .4s;
+}
+
+.share-btn button:hover{
+  transform: scale(1.1);
+}
+
+.share-btn .btn1{
+  border: 2px solid darkblue;
+}
+
+.share-btn .btn2{
+  border: 2px solid skyblue;
+}
+
+.share-btn .btn3{
+  border: 2px solid blue;
+}
+
+
+.share-btn .btn4{
+  border: 2px solid green;
+}
+
+.flyer-hold{
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.flyer-hold .img-hold{
+  width: 100%;
+}
+.next-hold{
+  width: 85%;
+  margin: auto;
+  background-color:  lavenderblush;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px 14px;
+  
+}
+
+.next-hold button{
+  padding: 8px;
+  width: 60%;
+  background-color: deeppink;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 17px;
+  transition: all .4s;
+}
+
+.next-hold button a{
+  color: white;
+  text-decoration: none;
+}
+
+.next-hold button:hover{
+  transform: scale(1.1);
+}
+
+.comment-group{
+  padding: 20px;
+  display: block:
+  margin: auto;
+  margin-left: 19px;
+}
+
+.comment-hold{
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 20px;
+  width: 90%;
+  margin-Right: ;
+}
+
+.comment-group .comment-hold textarea{
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  border: none;
+  background-color: lightgray;
+  display: block;
+  font-size: 18px;
+}
+
+.comment-hold button{
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: deeppink;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all .4s;
+}
+
+.comment-hold button a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.review-hold{
+  margin: 20px 0px;
+  border-bottom: 1px solid gainsboro;
+  transition: all .4s;
+  margin-left: 25px;
+}
+
+.review{
+  display: flex;
+  align-items: ;
+}
+
+.review-btn{
+  width: fit-content;
+}
+
+.review-btn button{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  background-image: url(default.jpeg);
+  background-size: cover;
+  margin-bottom: -40px;
+}
+
+.review-btn .days{
+  font-weight: 600;
+  margin-top: 1px;
+  text-align: center;
+}
+
+.review .name{
+  margin-left: 20px;
+}
+
+.load-more{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  background-color: deeppink;
+  border: none;
+  border-radius: 8px;
+}
+
+.load-more a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.author{
+  color: black;
+  padding: 1px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.chat{
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: deeppink;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  top: 85%;
+  left: 80%;
+  position: fixed;
+} 
+
+
+   input[type="text"]{
+   width:;
+   color: black;
+  display: block;
+  padding: 10px;
+  background-color: gainsboro;
+  border: none;
+  font-size: 17px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+   }
+  input[type="email"]{
+   width:;
+  display: block;
+  padding: 10px;
+  background-color: gainsboro;
+  border: none;
+  font-size: 17px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  input[type="button"]{
+  padding: 8px;
+  width: 60%;
+  background-color: deeppink;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 17px;
+  transition: all .4s;
+}
+  
+  #dl-png{
+  padding: 8px;
+  width: 60%;
+  background-color: deeppink;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 17px;
+  transition: all .4s;
+  text-align: center;
+  margin-left: 67PX;
+}
+  }
+     
+        input[type="image"]{
+          height: 70px;
+          width: 70px;
+          border-radius:50%;
+          margin-left: 137px; 
+      }
+        
+        
+        #board {
+            position: relative;
+        }
+        #displayImage {
+            position: relative;
+            cursor: move;
+            z-index: 1;
+            overflow: hidden;
+        }
+        #ina {
+            position: absolute;
+            top: 44%;
+            left: 65%;
+            width: 26%;
+            height: 26%;
+            border: 3px solid #ffe795;
+            border-radius: 20%;
+            z-index: 2;
+            overflow: ;
+        }
+        input{
+        display: flex;
+        margin:0 auto;
+        justify-content: center;
+        color: blue;
+           
+        }
+        form{
+            text-align: center;
+        }
+        
+        
+     
+        #userNames-display{
+            position: absolute;
+            margin-bottom: 30px;
+            bottom: 0;
+            padding: 10px;
+            color: red;
+            text-align: center;
+            left: 50%;
+            top: 167%;
+            font-size: ;
+            transform: translateX(-50px);
+            position: ;
+        }
+        #userNames-display p{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            position: ; 
+        }
+        #comment-input{
+            margin-left: 0px;
+        }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js">
+        </script>
+    
+</head>
+<body>
+   <body>
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="logo-hold">
+    <div class="img-hold">
+      <img src="logo.jpg" width="100%" >
+    </div>
+      <h1>Edifice International Network</h1>
+    </div>
+  </header>
+  
+  <!-- BODY IMAGE SECTION -->
+  <div class="body-img">
+    <div class="img-content">
+      <div class="img-text">
+      <h1>EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
+        </div>
+    </div>
+  </div>
+  
+  <div class="body-group">
+    <div class="group">
+    <h1>EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
+    
+    <div class="body-title">
+      <button class="title-logo"></button>
+      <div class="title-text">
+        <h3>Edifice International Network</h3>
+        <p class="C-Date" id="currentDate">19-07-2023</p>
+      </div>
+    </div>
+    </div>
+    
+    <div class="post-group">
+    <div class="body-post">
+      <div class="post-hold">
+        <i class="fa fa-line-chart"></i>
+        <h3 id="views-count">341</h3>
+        <p>Views</p>
+      </div>
+      
+       <div class="post-hold">
+        <i class="fa fa-users"></i>
+        <h3 id="entries-count">341</h3>
+        <p>Entires</p>
+      </div>
+      
+       <div class="post-hold">
+        <i class="fa fa-commenting"></i>
+        <h3 id="comment-count">341</h3>
+        <p>Comments</p>
+      </div>
+      
+    </div>
+    </div>
+     
+  
+    <div class="share-hold">
+      <h4>Share:</h4>
+      <div class="share-btn">
+        <button class="btn1"><i class="fab fa-facebook-f"></i></button>
+        <button class="btn2"><i class="fab fa-twitter"></i></button>
+        <button class="btn3"><i class="fab fa-linkedin"></i></button>
+        <button class="btn4"><i class="fab fa-whatsapp"></i></button>
+      </div>
+    </div>
+    <div id="board">
+        <img id="flyer-download" src="board.jpg" alt="Flier" style = 'margin: "auto"; padding: "auto" height:350px; width:320px; border-radius: 0%; display: flex; margin: 0 auto'>
+        <div id="ina">
+            <img id="displayImage" src="" alt="Uploaded Image" style="max-width: 500px; display: none; border-radius:20%; top:6%; left: 5%; bottom: 4%" height="90%" width="90%" >
+         
+        </div>
+        <br><br>
+            
+    <!--  <label 3
+            <input type="file" accept="image/jpeg, image/PNG, image/jpg"  id="imageInput"> --> 
+            
+    <div style="position: relative;">  
+              <input type="file" accept="image/jpeg, image/PNG, image/jpg"  id="imageInput" style="position: absolute; opacity: 0; z-index: -1;"> <label for="imageInput" style="cursor: pointer padding : 10px; border: 1px solid #ccc; background-color:deeppink; margin-left: 30%;padding: 8px; width: 60%;border: none;color: white; border-radius: 6px; font-size: 17px;
+  transition: all .4s;">upload image </label>
+         </div> 
+            
+            
+        </div>
+    </div>
+    <br>
+    
+    <form id = "reg-form" method = "POST" action = "" > 
+        
+       <div class="" id="userNames-display">
+        <h3> </h3>   
+        </div>
+          <input type="text" id="fname" placeholder="first name" name="fname" required><br>
+        
+          <input type="text" id="sname" placeholder="second name" name="sname" required><br>
+          <input type="email" id="p-contact" placeholder=" Email: e.g Mathewdoe@gmail.com" required><br>
+          
+           <input type="button" value="submit" id="submit-button">
+    <!-- <div class="next-hold">
+      <input type="button" value="submit" id="submit-button"> -->
+    </form>
+    <br><br>
+    <button id="dl-png">Download Content as Image</button>
+          
+     <div class="comment-group">
+      <h3>Comment (<span id="comments-count-display">30</span>)</h3>
+      
+      <div class="comment-hold">
+        <p>Your Comments <font>*</font></p>
+        <textarea id="comment-input" name="message"></textarea>
+        <button id="post-comment-btn"><i class="fa fa-paper-plane">Post Comment</i></button>
+      </div>
+     <div id="comment-container"> 
+     </div>
+     </div>
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p  class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      
+      
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p class="days">2 Days</p>
+        </div>
+        <h4 class="name">Smith Adams</h4>
+         </div>
+        <p>I will Be there 100%</p>
+      </div>
+      <!-- I remove the anchors tag -->
+      <button class="load-more">LOAD MORE COMMENTS</button>
+      
+    </div>
+
+  </div>
+  
+  <div class="author">
+    <p>Powered By <img src="logo.jpg" height="30px;"> Edifice</p>
+  </div>
+  
+  <button class="chat">
+    <i class="fa fa-comments"></i>
+  </button>
+  </div>
+    </div>
+    
+    
+
+    <script>
+        "use strict"
+        
+  const currentDateElement = document.getElementById("currentDate");
+  const currentDate = new Date();
+  const day = currentDate.getDate().toString().padStart(2, '0');
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+  const year = currentDate.getFullYear();
+  currentDateElement.innerText = `${day}-${month}-${year}`;
+        
+        
+        
+        
+        
+      
+    setInterval(()=>{
+      const currentDate = new Date();
+      const Date = currentDate.getDate().toString().padstart(2, '0');
+      const month = (currentDate.getMonth() + 1).toString().PadStart(2,'0');
+ const year = CurrentDate.getFullYear();
+ currentDateElement.innerText = `${day}-${Month}-${year}`;
+    },86400000);
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        let UserNames = [];
+ document.getElementById("submit-button").addEventListener("click", function (){
+     const firstName = document.getElementById("fname").value;
+     const lastName =
+document.getElementById("sname").value;
+
+const fullName = `${firstName} ${lastName}`;
+
+     UserNames.push(fullName);
+     displayUserNames();
+ }
+     );
+        
+   function displayUserNames(){
+       const userNamesElement = document.getElementById("userNames-display");
+  userNamesElement.innerHTML="";
+  UserNames.forEach((name)=>{
+      const nameElement = document.createElement('p');
+      nameElement.textContent = name;
+      userNamesElement.appendChild(nameElement);
+  });
+   }
+        
+        
+        
+        
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            var file = event.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var img = document.getElementById('displayImage');
+                    img.style.display = 'inline';
+                    img.style.position = 'absolute';
+                    img.style.overflow = 'hidden';
+                    img.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });  
+       
+       
+       let viewsCount = 0;
+       let entriesCount = 0;
+       let commentsCount = 0;
+      
+ document.getElementById("views-count").innerText = viewsCount;
+        document.getElementById("entries-count").innerText = entriesCount;
+         document.getElementById("comment-count").innerText = commentsCount;
+      
+      document.getElementById("comments-count-display").innerText = commentsCount;      
+
+function updateViewsCount(){
+    viewsCount++; document.getElementById("views-count").innerText = viewsCount;       
+}
+
+
+
+function updateEntriesCount(){
+    entriesCount++; document.getElementById("entries-count").innerText = entriesCount;       
+}
+      
+  document.addEventListener('DOMContentLoaded', function(){
+  const commentInput = document.getElementById('comment-input');
+  
+      const postCommentBtn = document.getElementById('post-comment-btn');
+      
+ if(commentInput && postCommentBtn){
+        
+   
+      postCommentBtn.addEventListener("click", function(){
+      
+/*document.getElementById("post- comment-btn").addEventListener("click", function(){*/
+    
+     const commentInput =  document.getElementById("comment-input");
+     const commentText = commentInput.value.trim();
+     
+     if(commentText){
+         commentsCount++;
+         document.getElementById('comment-count').innerText = commentsCount;
+      document.getElementById("comments-count-display").innerText = commentsCount;
+     }
+      
+      const commentHTML =`
+      <div class="review-hold">
+      <div class="review">
+        <div class="review-btn">
+          <button></button>
+          <p  class="days">${new Date().toLocaleTimeString()}</p>
+        </div>
+        <h4 class="name" style="margin-left:0px; color:deeppink; font-size: 17px" >YOU</h4>
+         </div>
+        <p>${commentText.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>
+      </div>
+      `;
+   const commentsContainer = document.getElementById("comment-container");
+      commentsContainer.insertAdjacentHTML('beforeend', commentHTML);
+      commentInput.value ="";
+  
+ });
+ }
+ });
+
+      setInterval(updateViewsCount,10000);
+      setInterval(updateEntriesCount,30000);
+      
+      
+      
+      
+      
+     
+       
+  /* document.getElementById("dl-png").addEventListener("click", function(){
+   const screenshotTarget = document.getElementById("flyer-download");
+  html2canvas(screenshotTarget).then((canvas)=>
+      {
+  const base64Image = canvas.toDataURL('image/png');
+ const fileName = `flyer-${userNames.join('-')}.png}`
+  saveAs(base64Image, fileName);
+   });
+       });  
+       
+ function saveAs(base64Image, fileName){
+     const link = document.CreateElement('a');
+     link.href = base64Image;
+     link.download = fileName;
+     link.click();
+     link.remove();
+     
+ }
+     */
+     
+   //  event('imageInput');
+    //  event('t2');
+      
+      function downloadDivAsImage(){
+      event.preventDefault();
+        
+            html2canvas(document.getElementById('board')).then((canvas)=>
+                 {
+                 
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'divContent.png';
+                link.click();
+                link.remove();
+/*    }).catch((error) =>{
+        console.error('error downloading image:',error);*/
+  /*      const link = document.querySelector('a');
+        if(link) link.remove(); */
+    });
+    }
+         
+     document.getElementById('dl-png').addEventListener('click', downloadDivAsImage);           
+       
+    </script>
+</body>
+</html>
