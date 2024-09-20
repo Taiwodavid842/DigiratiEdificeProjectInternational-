@@ -443,12 +443,14 @@ header .img-hold{
         #userNames-display{
             position: absolute;
             margin-bottom: 30px;
+            width: 200px;
+            padding: 10px;
+            margin: 0 auto; 
             bottom: 0;
             padding: 10px;
-            color: red;
             text-align: center;
-            left: 52%;
-            top: 163%;
+            left: 72%;
+            top: 172%;
             font-size: ;
             transform: translateX(-50px);
             position: ;
@@ -458,6 +460,7 @@ header .img-hold{
             font-size: 15px;
             font-weight: bold;
             position: absolute; 
+            font-weigh: bold;
         }
         #comment-input{
             margin-left: 0px;
@@ -671,6 +674,7 @@ header .img-hold{
  const year = CurrentDate.getFullYear();
  currentDateElement.innerText = `${day}-${Month}-${year}`;
     },86400000);
+    
       
       
       
@@ -702,10 +706,20 @@ const fullName = `${firstName} ${lastName}`;
       userNamesElement.appendChild(nameElement);
   });
    }
+        const storedNames = localStorage.getItem('userNames');
+        if(storedNames){
+            UserNames = JSON.parse(storedNames);
+            displayUserNames();
+            
+        }
+        document.getElementById('submit-button').addEventListener("click", function(){
+                         localStorage.getItem('userNames', JSON.stringify('UserNames'));
+                         
+        });
         
         
         
-        
+        //file upload
         document.getElementById('imageInput').addEventListener('change', function(event) {
             var file = event.target.files[0];
             if (file) {
@@ -720,8 +734,12 @@ const fullName = `${firstName} ${lastName}`;
                 reader.readAsDataURL(file);
             }
         });  
+            // file upload ends here
        
        
+       
+       
+       // comment, entire, view counts
        let viewsCount = 0;
        let entriesCount = 0;
        let commentsCount = 0;
