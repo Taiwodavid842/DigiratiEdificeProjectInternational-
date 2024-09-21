@@ -449,8 +449,8 @@ header .img-hold{
             bottom: 0;
             padding: 10px;
             text-align: center;
-            left: 72%;
-            top: 172%;
+            left: 45%;
+            top: 82%;
             font-size: ;
             transform: translateX(-50px);
             position: ;
@@ -544,6 +544,7 @@ header .img-hold{
         <img id="flyer-download" src="board.jpg" alt="Flier" style = 'margin: "auto"; padding: "auto" height:350px; width:320px; border-radius: 0%; display: flex; margin: 0 auto'>
         <div id="ina">
             <img id="displayImage" src="" alt="Uploaded Image" style="max-width: 500px; display: none; border-radius:20%; top:6%; left: 5%; bottom: 4%" height="90%" width="90%" >
+            <div id="userNames-display"></div>
          </div>
         </div>
         <br><br>
@@ -563,9 +564,9 @@ header .img-hold{
     
     <form id = "reg-form" method = "POST" action = "" > 
         
-       <div class="" id="userNames-display">
+       
         <h3> </h3>   
-        </div>
+       
           <input type="text" id="fname" placeholder="first name" name="fname" required><br>
         
           <input type="text" id="sname" placeholder="second name" name="sname" required><br>
@@ -706,12 +707,12 @@ const fullName = `${firstName} ${lastName}`;
       userNamesElement.appendChild(nameElement);
   });
    }
-        const storedNames = localStorage.getItem('userNames');
+     /*   const storedNames = localStorage.getItem('userNames');
         if(storedNames){
             UserNames = JSON.parse(storedNames);
             displayUserNames();
             
-        }
+        } */
         document.getElementById('submit-button').addEventListener("click", function(){
                          localStorage.getItem('userNames', JSON.stringify('UserNames'));
                          
@@ -854,5 +855,7 @@ function updateEntriesCount(){
      document.getElementById('dl-png').addEventListener('click', downloadDivAsImage);           
        
     </script>
-</body>
-</html>
+    
+    
+    
+    
