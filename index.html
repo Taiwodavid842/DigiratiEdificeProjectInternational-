@@ -460,7 +460,7 @@ header .img-hold{
             bottom: 0;
             padding: 10px;
             text-align: center;
-            left: 35%;
+            left: 32%;
             top: 78%;
             font-size: ;
             transform: translateX(-50px);
@@ -545,10 +545,10 @@ header .img-hold{
     <div class="share-hold">
       <h4>Share:</h4>
       <div class="share-btn">
-        <button class="btn1"><i class="fab fa-facebook-f"></i></button>
-        <button class="btn2"><i class="fab fa-twitter"></i></button>
-        <button class="btn3"><i class="fab fa-linkedin"></i></button>
-        <button class="btn4"><i class="fab fa-whatsapp"></i></button>
+        <button class="btn1" onclick="shareFacebook()"><i class="fab fa-facebook-f"></i></button>
+        <button class="btn2" onclick="ShareTwitter()"><i class="fab fa-twitter"></i></button>
+        <button class="btn3" onclick="ShareLinkedin()"><i class="fab fa-linkedin"></i></button>
+        <button class="btn4" onclick="shareWhatsApp()"><i class="fab fa-whatsapp"></i></button>
       </div>
     </div>
     <div id="board">
@@ -578,11 +578,11 @@ header .img-hold{
        
         <h3> </h3>   
        
-          <input type="text" id="fname" placeholder="first name" name="fname" required><br>
+          <input type="text" id="fname" placeholder="first name" name="fname" required><br><br>
         
-          <input type="text" id="sname" placeholder="second name" name="sname" required><br>
-          <input type="email" id="p-contact" placeholder=" Email: e.g Mathewdoe@gmail.com" required><br>
-          
+          <input type="text" id="sname" placeholder="second name" name="sname" required><br><br>
+          <!--  <input type="email" id="p-contact" placeholder=" Email: e.g Mathewdoe@gmail.com" required><br>
+          -->
            <input type="button" value="submit" id="submit-button">
     <!-- <div class="next-hold">
       <input type="button" value="submit" id="submit-button"> -->
@@ -687,6 +687,16 @@ header .img-hold{
  currentDateElement.innerText = `${day}-${Month}-${year}`;
     },86400000);
     
+      
+      
+      function shareFacebook(){
+  const url = encodeURIComponent(window.location.href);
+const shareUrl =" https://www.Facebook.com/sharer/sharer.php?u=`${url}`";
+       window.open(shareUrl,'_blank');
+       
+      }
+      
+      
       
       
       
