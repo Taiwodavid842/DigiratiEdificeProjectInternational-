@@ -546,8 +546,8 @@ header .img-hold{
       <h4>Share:</h4>
       <div class="share-btn">
         <button class="btn1" onclick="shareFacebook()"><i class="fab fa-facebook-f"></i></button>
-        <button class="btn2" onclick="ShareTwitter()"><i class="fab fa-twitter"></i></button>
-        <button class="btn3" onclick="ShareLinkedin()"><i class="fab fa-linkedin"></i></button>
+        <button class="btn2" onclick="shareTwitter()"><i class="fab fa-twitter"></i></button>
+        <button class="btn3" onclick="shareLinkedIn()"><i class="fab fa-linkedin"></i></button>
         <button class="btn4" onclick="shareWhatsApp()"><i class="fab fa-whatsapp"></i></button>
       </div>
     </div>
@@ -696,14 +696,30 @@ const shareUrl =" https://www.Facebook.com/sharer/sharer.php?u=`${url}`";
        
       }
       
+      function shareTwitter(){
+  const url = encodeURIComponent(window.location.href);
+const shareUrl =" https://twitter.com/intent/tweet?url=`${url}`";
+       window.open(shareUrl,'_blank');
+       
+      }
+      
+      function shareLinkedIn(){
+  const url = encodeURIComponent(window.location.href);
+const shareUrl =" https://www.linkedin.com/shareArticle?url=`${url}`";
+       window.open(shareUrl,'_blank');
+       
+      }
       
       
+      function shareWhatsApp(){
+  const url = encodeURIComponent(window.location.href);
+const shareUrl =" https://wa.me/?text=`${url}`";
+       window.open(shareUrl,'_blank');
+       
+      }
       
       
-      
-      
-      
-      
+  
         
         
         let UserNames = [];
